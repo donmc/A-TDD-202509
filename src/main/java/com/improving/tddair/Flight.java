@@ -1,6 +1,8 @@
 package com.improving.tddair;
 
 
+import java.time.Instant;
+
 public class Flight {
 	
 	private String origin;
@@ -8,6 +10,7 @@ public class Flight {
 	private String airline;
 	private int number;
 	private int mileage;
+	private Instant instant;
 
 	public Flight(String origin, String destination, int mileage, String airline, int number) {
 		if(origin == null || origin.length() != 3) {
@@ -46,5 +49,16 @@ public class Flight {
 	public int getMileage() {
 		return mileage;
 	}
-	
+
+	public int getNumber() {
+		return number;
+	}
+
+	public Instant getDepartureTime() {
+		return instant;
+	}
+
+	public void setDepartureTime(Instant instant) {
+		this.instant = instant;
+	}
 }

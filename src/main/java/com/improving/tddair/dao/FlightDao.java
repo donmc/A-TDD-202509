@@ -1,4 +1,6 @@
-package com.improving.tddair;
+package com.improving.tddair.dao;
+
+import com.improving.tddair.Flight;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +8,7 @@ import java.util.Map;
 public class FlightDao {
 
 	private Map<String, Flight> flights = new HashMap<>();
-	
+
 	public FlightDao() {
 		addFlight("DFW", "ORD", 924, "AA", 242);
 		addFlight("LGA", "CDG", 3620, "AF", 38);

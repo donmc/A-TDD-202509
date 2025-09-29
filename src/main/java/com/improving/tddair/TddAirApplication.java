@@ -1,6 +1,8 @@
 package com.improving.tddair;
 
 
+import com.improving.tddair.dao.FlightDao;
+
 public class TddAirApplication {
 	
 	private FlightDao flights = new FlightDao();
