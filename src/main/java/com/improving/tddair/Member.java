@@ -6,6 +6,8 @@ public class Member {
     private int ytdMiles;
     private int balanceMiles;
     private Tier tier;
+    private int seatUpgrades;
+    private Cas cas;
 
     public Member(String username, String email) {
         this.username = username;
@@ -38,5 +40,19 @@ public class Member {
         this.ytdMiles += flight.getMileage();
         this.balanceMiles += flight.getMileage();
         this.tier = Tier.getCorrespondingTierFor(ytdMiles);
+    }
+
+    public void purchaseSeatUpgradeUsingMiles(int quantity) {
+    }
+
+    public int getSeatUpgrades() {
+        return this.seatUpgrades;
+    }
+
+    public void setCas(Cas cas) {
+        this.cas = cas;
+    }
+
+    public void purchaseSeatUpgradeUsingCC(int quantity, String ccNumber) {
     }
 }
