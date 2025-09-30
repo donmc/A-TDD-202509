@@ -54,4 +54,15 @@ public class WhenRegisteringMember {
         Tier expectedTier = Tier.RED;
         assertEquals(expectedTier, member.getTier());
     }
+
+    @Test
+    void shouldHave0YtdMiles() {
+        assertEquals(0, member.getYtdMiles());
+    }
+
+    @Test
+    void shouldHave10000BonusBalanceMiles() {
+        assertEquals(10000, member.getBalanceMiles());
+    }
+
 }
