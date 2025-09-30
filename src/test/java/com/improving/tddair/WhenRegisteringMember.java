@@ -48,4 +48,10 @@ public class WhenRegisteringMember {
             app.registerMember(username, email);
         });
     }
+
+    @Test
+    void shouldHaveRedStatus() {
+        Tier expectedTier = Tier.RED;
+        assertEquals(expectedTier, member.getTier());
+    }
 }

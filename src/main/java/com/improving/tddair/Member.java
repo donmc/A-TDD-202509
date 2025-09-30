@@ -16,4 +16,8 @@ public class Member {
     public String getEmail() {
         return email;
     }
+
+    public Tier getTier() {
+        return Tier.RED;
+    }
 }
