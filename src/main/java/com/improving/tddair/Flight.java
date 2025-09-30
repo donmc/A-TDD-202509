@@ -1,6 +1,5 @@
 package com.improving.tddair;
 
-
 import java.time.Instant;
 
 public class Flight {
