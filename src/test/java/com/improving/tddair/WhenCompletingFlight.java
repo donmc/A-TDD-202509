@@ -70,6 +70,21 @@ public class WhenCompletingFlight {
 
     @Test
     void shouldChangeTierFromBlueToGold() {
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
 
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+        app.completeFlight("donmc", "QF191");
+
+        assertEquals(Tier.GOLD, member.getTier());
     }
 }
